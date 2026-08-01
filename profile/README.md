@@ -1,7 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="banner-light.svg">
-  <img src="banner-light.svg" alt="EVENLIO — The Event Operating System" style="width:100%; max-width:1180px;">
+  <img src="banner-light.svg" alt="EVENLIO — The Event Operating System" width="1180">
 </picture>
 
 ---
