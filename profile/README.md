@@ -1,27 +1,8 @@
-<div align="center" style="background: #131313; padding: 56px 32px 48px; border-radius: 24px;">
-
-<span style="font-family: Inter, sans-serif; font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #e10100; font-weight: 700;">The Cinematic Engine</span>
-
-<div style="margin-top: 18px; font-family: Inter, sans-serif; font-size: 56px; font-weight: 800; line-height: 1.02; letter-spacing: -0.02em; background: linear-gradient(180deg, #ffffff 30%, #ffb4a8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-EVENLIO
-</div>
-
-<div style="margin-top: 12px; font-family: Manrope, sans-serif; font-size: 20px; font-weight: 500; color: #e5e2e1;">
-The Event Operating System — built, owned & protected in-house.
-</div>
-
-<div style="margin-top: 24px; font-family: Manrope, sans-serif; font-size: 15px; line-height: 1.7; color: #c7c4c1; max-width: 680px; margin-left: auto; margin-right: auto;">
-We build modern technology for the event industry — from ticketing and organizer tools
-to esports, clubs, and immersive AR experiences. One platform, engineered end to end.
-</div>
-
-<br>
-
-<span style="display: inline-block; margin: 3px; padding: 7px 16px; border-radius: 999px; font-family: Inter, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: #ffffff; background: #e10100; box-shadow: 0 0 18px rgba(225,1,0,0.55);">PRODUCTION-GRADE</span>
-<span style="display: inline-block; margin: 3px; padding: 7px 16px; border-radius: 999px; font-family: Inter, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: #e5e2e1; background: #1c1b1b;">SECURITY-FIRST</span>
-<span style="display: inline-block; margin: 3px; padding: 7px 16px; border-radius: 999px; font-family: Inter, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: #e5e2e1; background: #1c1b1b;">OWNERSHIP</span>
-
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="banner-light.svg">
+  <img src="banner-light.svg" alt="EVENLIO — The Event Operating System" style="width:100%; max-width:1180px;">
+</picture>
 
 ---
 
@@ -29,7 +10,7 @@ to esports, clubs, and immersive AR experiences. One platform, engineered end to
 
 | Product | Focus | Highlights |
 | --- | --- | --- |
-| **Evenlio Event Management System** | The all-in-one platform for events | Ticketing with custom fields & PDF tickets, QR check-in, organizer analytics, certificates, promo codes, email campaigns, wallets & withdrawals |
+| **Evenlio Event Management System** | The all-in-one platform for events | Ticketing with custom fields & PDF tickets, QR check-in, organizer analytics, certificates, promo codes, email campaigns & notifications |
 | **Evenlio AR Experiences** | Augmented reality engagement | 3D AR business cards, image markers, QR-based AR content for events and exhibitors |
 | **Esports & Clubs Modules** | Competitive event verticals | Esports events, clubs & leagues, competition templates, live game integrations |
 | **Exhibitor Platform** | B2B event tools | Exhibitor applications, booth management, contacts & check-ins, KYC flows |
@@ -45,7 +26,7 @@ to esports, clubs, and immersive AR experiences. One platform, engineered end to
 <span style="display: inline-block; margin: 4px; padding: 8px 18px; border-radius: 999px; font-family: Inter, sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; background: #1c1b1b;">PHP 8.3</span>
 <span style="display: inline-block; margin: 4px; padding: 8px 18px; border-radius: 999px; font-family: Inter, sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; background: #1c1b1b;">MySQL 8</span>
 <span style="display: inline-block; margin: 4px; padding: 8px 18px; border-radius: 999px; font-family: Inter, sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; background: #1c1b1b;">Blade + Bootstrap</span>
-<span style="display: inline-block; margin: 4px; padding: 8px 18px; border-radius: 999px; font-family: Inter, sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; background: #1c1b1b;">30+ Payment Gateways</span>
+<span style="display: inline-block; margin: 4px; padding: 8px 18px; border-radius: 999px; font-family: Inter, sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; background: #1c1b1b;">AR / 3D</span>
 <span style="display: inline-block; margin: 4px; padding: 8px 18px; border-radius: 999px; font-family: Inter, sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; background: #1c1b1b;">EN / AR / FR + RTL</span>
 
 </div>

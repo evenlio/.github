@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" font-family="Inter, 'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e10100" stop-opacity="0.14"/>
+      <stop offset="0.5" stop-color="#1c1b1b" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffb4a8" stop-opacity="0.08"/>
+    </linearGradient>
+    <radialGradient id="blobA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e10100" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#e10100" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffb4a8" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#ffb4a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffb4a8"/>
+      <animate attributeName="x1" values="0;1;0" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="asciiGradA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb4a8"/>
+      <stop offset="1" stop-color="#e10100"/>
+      <animate attributeName="x2" values="1;0.3;1" dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="asciiGradB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e10100"/>
+      <stop offset="1" stop-color="#ff7a6e"/>
+      <animate attributeName="x1" values="0;0.7;0" dur="11s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e10100" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#e10100" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#e10100" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="0.4" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="borderShine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="0.5" stop-color="#e10100" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.05"/>
+      <animate attributeName="x1" values="0;1" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1;2" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb4a8"/>
+      <stop offset="0.55" stop-color="#e10100"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0"/>
+    </filter>
+    <clipPath id="frame">
+      <rect width="1180" height="610" rx="24"/>
+    </clipPath>
+    <clipPath id="typing">
+      <rect x="520" y="198" width="600" height="40">
+        <animate attributeName="width" values="0;600" dur="1.4s" begin="2.2s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="asciiReveal">
+      <rect x="0" y="0" width="460" height="620">
+        <animate attributeName="height" values="0;620" dur="2.5s" begin="0.4s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1180" height="610" fill="#131313"/>
+
+    <circle cx="100" cy="90" r="260" fill="url(#blobA)">
+      <animate attributeName="cy" values="90;130;90" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.7;1" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1020" cy="500" r="300" fill="url(#blobB)">
+      <animate attributeName="cy" values="500;460;500" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="620" cy="320" r="330" fill="url(#blobA)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="12s" repeatCount="indefinite"/>
+    </circle>
+
+    <rect width="1180" height="610" fill="url(#bgGlow)"/>
+
+    <g opacity="0.5">
+      <circle cx="180" cy="120" r="1.6" fill="#e10100"><animate attributeName="cy" values="120;60" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="340" cy="500" r="1.4" fill="#ffb4a8"><animate attributeName="cy" values="500;440" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0" dur="9s" repeatCount="indefinite"/></circle>
+      <circle cx="900" cy="110" r="1.6" fill="#e10100"><animate attributeName="cy" values="110;50" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0" dur="8s" repeatCount="indefinite"/></circle>
+      <circle cx="1080" cy="420" r="1.3" fill="#ffb4a8"><animate attributeName="cy" values="420;360" dur="10s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0" dur="10s" repeatCount="indefinite"/></circle>
+      <circle cx="760" cy="560" r="1.5" fill="#e10100"><animate attributeName="cy" values="560;500" dur="11s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0" dur="11s" repeatCount="indefinite"/></circle>
+      <circle cx="1100" cy="180" r="1.3" fill="#e10100"><animate attributeName="cy" values="180;120" dur="12s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0" dur="12s" repeatCount="indefinite"/></circle>
+      <circle cx="60" cy="400" r="1.4" fill="#ffb4a8"><animate attributeName="cy" values="400;340" dur="13s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0" dur="13s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <rect width="1180" height="610" filter="url(#noise)" opacity="0.35"/>
+
+    <rect x="0" y="0" width="1180" height="610" fill="none" stroke="url(#borderShine)" stroke-width="1.2"/>
+
+    <rect x="30" y="24" width="1120" height="562" rx="20" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    <path d="M0 0 L420 0 L0 320 Z" fill="url(#glassGrad)"/>
+
+    <rect x="0" y="-6" width="1180" height="2.5" fill="url(#lineGrad)">
+      <animate attributeName="y" values="-6;614" dur="7s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ============ LEFT : ASCII PANEL ============ -->
+    <g clip-path="url(#asciiReveal)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="6s" repeatCount="indefinite"/>
+        <rect x="52" y="60" width="400" height="320" rx="18" fill="#1c1b1b"/>
+        <rect x="52" y="60" width="400" height="320" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+
+        <text x="262" y="104" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="12" letter-spacing="3" fill="#8f8c89">EVENLIO OS — BOOT SEQUENCE</text>
+        <rect x="70" y="118" width="364" height="1" fill="#ffffff" fill-opacity="0.05"/>
+
+        <text x="70" y="172" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="11" letter-spacing="2" fill="url(#asciiGradA)" filter="url(#glow)">█████ █   █ █████ █   █ █     █████ █████</text>
+        <text x="70" y="194" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="11" letter-spacing="2" fill="url(#asciiGradB)" filter="url(#glow)">█     █   █ █     ██  █ █       █   █   █</text>
+        <text x="70" y="216" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="11" letter-spacing="2" fill="url(#asciiGradA)" filter="url(#glow)">█████ █   █ █████ █ █ █ █       █   █   █</text>
+        <text x="70" y="238" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="11" letter-spacing="2" fill="url(#asciiGradB)" filter="url(#glow)">█       █ █  █     █  ██ █       █   █   █</text>
+        <text x="70" y="260" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="11" letter-spacing="2" fill="url(#asciiGradA)" filter="url(#glow)">█████   █   █████ █   █ █████ █████ █████</text>
+
+        <rect x="316" y="244" width="9" height="14" fill="#e10100">
+          <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+        </rect>
+
+        <rect x="70" y="286" width="364" height="2" fill="url(#lineGrad)">
+          <animate attributeName="y" values="286;80" dur="5s" repeatCount="indefinite"/>
+        </rect>
+
+        <text x="70" y="318" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="12" fill="#8f8c89">&gt; <tspan fill="#ffb4a8">system ready</tspan><tspan fill="#e5e2e1"> · engines online</tspan></text>
+
+        <circle cx="90" cy="352" r="4" fill="#e10100" filter="url(#glow)">
+          <animate attributeName="opacity" values="1;0.35;1" dur="1.6s" repeatCount="indefinite"/>
+        </circle>
+        <text x="104" y="357" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" letter-spacing="2.5" fill="#e5e2e1">PRODUCTION</text>
+      </g>
+    </g>
+
+    <!-- ============ RIGHT : TERMINAL ============ -->
+    <rect x="500" y="60" width="628" height="472" rx="18" fill="#1c1b1b"/>
+    <rect x="500" y="60" width="628" height="472" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+    <path d="M500 78 C500 66 509 60 521 60 L1107 60 C1119 60 1128 66 1128 78 L1128 92 L500 92 Z" fill="#252424"/>
+
+    <circle cx="526" cy="76" r="6" fill="#e10100" filter="url(#glow)"/>
+    <circle cx="548" cy="76" r="6" fill="#353534"/>
+    <circle cx="570" cy="76" r="6" fill="#353534"/>
+    <text x="814" y="81" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="12" fill="#8f8c89">evenlio — event-os</text>
+
+    <text x="532" y="132" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="14" fill="#8f8c89">$ whoami</text>
+
+    <g clip-path="url(#typing)">
+      <text x="532" y="178" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="40" font-weight="800" letter-spacing="-0.02em" fill="url(#titleGrad)">EVENLIO</text>
+    </g>
+    <rect x="532" y="218" width="4" height="30" fill="#e10100">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+
+    <text x="532" y="272" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="500" fill="#c7c4c1">The <tspan fill="#ffb4a8" font-weight="700">Event Operating System</tspan> — owned &amp; built by Evenlio.</text>
+
+    <text x="532" y="310" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="11" font-weight="700" letter-spacing="3" fill="#e10100">WHAT WE BUILD</text>
+
+    <g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="12s" repeatCount="indefinite"/>
+        <text x="532" y="340" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="14" fill="#8f8c89">&gt; <tspan fill="#e5e2e1">ticketing · check-in · access control</tspan></text>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="12s" begin="3s" repeatCount="indefinite"/>
+        <text x="532" y="340" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="14" fill="#8f8c89">&gt; <tspan fill="#e5e2e1">organizer &amp; exhibitor platforms</tspan></text>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="12s" begin="6s" repeatCount="indefinite"/>
+        <text x="532" y="340" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="14" fill="#8f8c89">&gt; <tspan fill="#e5e2e1">esports · clubs · AR experiences</tspan></text>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="12s" begin="9s" repeatCount="indefinite"/>
+        <text x="532" y="340" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="14" fill="#8f8c89">&gt; <tspan fill="#e5e2e1">multi-language · global-ready</tspan></text>
+      </g>
+    </g>
+    <rect x="612" y="330" width="8" height="14" fill="#e10100">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="2.6s" fill="freeze"/>
+      <text x="532" y="392" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="11" font-weight="700" letter-spacing="3" fill="#e10100">SIGNALS</text>
+      <text x="532" y="418" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="13" fill="#8f8c89">LOCATION   <tspan fill="#e5e2e1">Worldwide · Remote</tspan></text>
+      <text x="532" y="440" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="13" fill="#8f8c89">FOCUS      <tspan fill="#e5e2e1">Event technology</tspan></text>
+      <text x="532" y="462" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="13" fill="#8f8c89">WEBSITE    <tspan fill="#ffb4a8">evenlio.com</tspan></text>
+      <text x="532" y="484" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="13" fill="#8f8c89">CONTACT    <tspan fill="#ffb4a8">contact@evenlio.com</tspan></text>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="3.6s" fill="freeze"/>
+      <rect x="532" y="420" width="560" height="1" fill="#ffffff" fill-opacity="0.05"/>
+      <g font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="600">
+        <g transform="translate(532,436)"><rect width="78" height="28" rx="14" fill="#353534"/><text x="39" y="19" text-anchor="middle" fill="#e5e2e1">Laravel</text></g>
+        <g transform="translate(620,436)"><rect width="78" height="28" rx="14" fill="#353534"/><text x="39" y="19" text-anchor="middle" fill="#e5e2e1">PHP 8.3</text></g>
+        <g transform="translate(708,436)"><rect width="82" height="28" rx="14" fill="#353534"/><text x="41" y="19" text-anchor="middle" fill="#e5e2e1">MySQL 8</text></g>
+        <g transform="translate(800,436)"><rect width="74" height="28" rx="14" fill="#353534"/><text x="37" y="19" text-anchor="middle" fill="#e5e2e1">Blade</text></g>
+        <g transform="translate(884,436)"><rect width="94" height="28" rx="14" fill="#353534"/><text x="47" y="19" text-anchor="middle" fill="#e5e2e1">Bootstrap</text></g>
+        <g transform="translate(988,436)"><rect width="74" height="28" rx="14" fill="#353534"/><text x="37" y="19" text-anchor="middle" fill="#e5e2e1">jQuery</text></g>
+        <g transform="translate(1072,436)"><rect width="90" height="28" rx="14" fill="#353534"/><text x="45" y="19" text-anchor="middle" fill="#e5e2e1">AR / 3D</text></g>
+      </g>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="4.4s" fill="freeze"/>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur="3.5s" repeatCount="indefinite"/>
+        <circle cx="546" cy="512" r="17" fill="#1c1b1b" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+        <circle cx="546" cy="512" r="7" fill="none" stroke="#ffb4a8" stroke-width="1.4"/>
+        <ellipse cx="546" cy="512" rx="3.2" ry="7" fill="none" stroke="#ffb4a8" stroke-width="1.2"/>
+        <path d="M539 512 h14 M546 505 v14" stroke="#ffb4a8" stroke-width="1.2" fill="none"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur="4s" begin="0.4s" repeatCount="indefinite"/>
+        <circle cx="596" cy="512" r="17" fill="#1c1b1b" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+        <rect x="589" y="505" width="14" height="10" rx="2" fill="none" stroke="#ffb4a8" stroke-width="1.4"/>
+        <path d="M589 506 L596 511 L603 506" fill="none" stroke="#ffb4a8" stroke-width="1.4"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur="3.5s" begin="0.8s" repeatCount="indefinite"/>
+        <circle cx="646" cy="512" r="17" fill="#1c1b1b" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+        <path d="M641 512 l4 -6 l4 6 M649 512 l4 -6 l4 6 M645 510 l3 8" fill="none" stroke="#ffb4a8" stroke-width="1.4" stroke-linecap="round"/>
+      </g>
+      <text x="700" y="517" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="600" fill="#c7c4c1">evenlio.com · <tspan fill="#ffb4a8">contact@evenlio.com</tspan></text>
+    </g>
+  </g>
+</svg>
