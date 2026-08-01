@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="banner-light.svg">
-  <img src="banner-light.svg" alt="EVENLIO — The Event Operating System" width="1180">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/evenlio/.github/main/profile/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/evenlio/.github/main/profile/banner-light.svg">
+  <img src="https://raw.githubusercontent.com/evenlio/.github/main/profile/banner-light.svg" alt="EVENLIO — The Event Operating System" width="1180">
 </picture>
 
 ---
